@@ -1,0 +1,82 @@
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn-Regular.woff2') format('woff2');
+}
+body {
+    font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+    background-color: #f8f3e6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.auth-container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 2rem auto;
+}
+.auth-image {
+    background-image: linear-gradient(to bottom right, rgb(209, 213, 219) 0%, #78e2de 85%);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+}
+.auth-forms {
+    padding: 2rem;
+}
+.logo {
+    max-width: 120px;
+    margin-bottom: 2rem;
+}
+.phone-icon {
+    width: 120px;
+    margin-bottom: 2rem;
+}
+.form-control {
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+}
+.btn-continue {
+    background-color: #37bcd4;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 1rem;
+}
+.btn-continue:hover {
+    background-color: #30c4bd;
+}
+.slide {
+    display: none;
+}
+.slide.active {
+    display: block;
+}
+.terms {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 3rem;
+}
+.terms a {
+    color: #4137d4;
+    text-decoration: none;
+    font-weight: 900;
+}
+.invalid-feedback {
+    font-size: 0.875rem;
+    color: #dc3545;
+}
+@media (max-width: 768px) {
+    .auth-image {
+        display: none !important;
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+}
